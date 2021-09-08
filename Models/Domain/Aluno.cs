@@ -14,5 +14,7 @@ namespace WebCoreBCC2.Models.Domain
         public string endereco { get; set; }
         public int contato { get; set; }
         public string email { get; set; }
+
+        public ICollection<Nota> notas { get; set; }
     }
 }

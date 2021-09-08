@@ -9,7 +9,6 @@ namespace WebCoreBCC2.Models.Domain
     {
         public int ID { get; set; }
         public string descricao { get; set; }
-
         public ICollection<Aluno> alunos { get; set; }
         public ICollection<Disciplina> disciplinas { get; set; }
     }
