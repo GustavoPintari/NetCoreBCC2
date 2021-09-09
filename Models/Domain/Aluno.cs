@@ -7,6 +7,7 @@ namespace WebCoreBCC2.Models.Domain
 {
     public class Aluno
     {
+        public int ID { get; set; }
         public int RA { get; set; }
         public string nome { get; set; }
         public int idade { get; set; }

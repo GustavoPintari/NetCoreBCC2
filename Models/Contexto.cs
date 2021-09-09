@@ -3,11 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebCoreBCC2.Models.Domain;
 
 namespace WebCoreBCC2.Models
 {
     public class Contexto : DbContext
     {
+        public Contexto(DbContextOptions<Contexto> options) : base(options) { }
         public DbSet<Aluno> Alunos { get; set; }
         public DbSet<Disciplina> Disciplinas { get; set; }
         public DbSet<Nota> Notas { get; set; }

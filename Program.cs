@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NETCOREBCC2
+namespace WebCoreBCC2
 {
     public class Program
     {
