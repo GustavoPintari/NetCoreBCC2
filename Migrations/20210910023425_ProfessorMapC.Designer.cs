@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebCoreBCC2.Models;
 
 namespace WebCoreBCC2.Migrations
 {
     [DbContext(typeof(Contexto))]
-    partial class ContextoModelSnapshot : ModelSnapshot
+    [Migration("20210910023425_ProfessorMapC")]
+    partial class ProfessorMapC
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -60,6 +62,9 @@ namespace WebCoreBCC2.Migrations
                         .HasColumnType("nvarchar(40)");
 
                     b.HasKey("ID");
+
+                    b.HasIndex("RA")
+                        .IsUnique();
 
                     b.HasIndex("SerieID");
 
